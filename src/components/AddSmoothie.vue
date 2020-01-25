@@ -3,7 +3,7 @@
     <h2 class="center-align add-smoothies indigo-text">
       Add New Smoothie Recipe
     </h2>
-    <form>
+    <form @submit.prevent="AddSmoothie">
       <div class="field title">
         <label for="title">Smoothie Title:</label>
         <input type="text" name="title" v-model="title" />
@@ -25,7 +25,15 @@
 export default {
   name: "AddSmoothie",
   data() {
-    return {};
+    return {
+      title: null
+    };
+  },
+  methods: {
+    AddSmoothie() {
+      // eslint-disable-next-line no-console
+      console.log(this.title);
+    }
   }
 };
 </script>
@@ -40,5 +48,14 @@ export default {
 .add-smoothies {
   font-style: italic;
   font-family: Montserrat;
+}
+
+.add-smoothie h2 {
+  font-size: 2em;
+  margin: 20px auto;
+}
+
+.add-smoothie .field {
+  margin: 20px auto;
 }
 </style>
