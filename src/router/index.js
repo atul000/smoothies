@@ -1,14 +1,15 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import AddSmoothie from "@/components/AddSmoothie";
+import Index from "@/components/Index";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "home",
-    component: Home
+    name: "Index",
+    component: Index
   },
   {
     path: "/about",
@@ -16,6 +17,11 @@ const routes = [
 
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue")
+  },
+  {
+    path: "/add-smoothie",
+    name: "AddSmoothie",
+    component: AddSmoothie
   }
 ];
 
