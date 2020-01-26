@@ -2,7 +2,7 @@ import firebase from "firebase";
 import "firebase/firestore";
 
 var firebaseConfig = {
-  apiKey: "AIzaSyCLmouQEQyTCH6FCVfODLE8pZmultYRadA",
+  apiKey: "",
   authDomain: "smoothies-da19f.firebaseapp.com",
   databaseURL: "https://smoothies-da19f.firebaseio.com",
   projectId: "smoothies-da19f",
