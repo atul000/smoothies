@@ -3,7 +3,11 @@
     <nav class="nav-extended indigo darken-2">
       <div class="nav-content">
         <router-link :to="{ name: 'Index' }">
-          <span class="nav-title">Smoothie Time!</span>
+          <span class="nav-title">Smoothie Time!</span><br />
+          <span class="love"
+            >Made with
+            <img src="https://img.icons8.com/dusk/24/000000/like.png" /> by Atul
+          </span>
         </router-link>
         <a href="" class="btn-floating btn-large halfway-fab pink">
           <router-link :to="{ name: 'AddSmoothie' }">
