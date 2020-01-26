@@ -5,7 +5,7 @@
         <i class="material-icons delete" @click="deleteSmoothie(smoothie.id)"
           >delete</i
         >
-        <h2 class="indigo-text">
+        <h2 class="indigo-text title">
           {{ smoothie.title }}
         </h2>
         <ul class="ingredients">
@@ -66,7 +66,9 @@ export default {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
   margin-top: 60px;
+  font-family: "Zhi Mang Xing", cursive;
 }
+
 .index h2 {
   font-size: 1.8em;
   text-align: center;

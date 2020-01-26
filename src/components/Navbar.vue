@@ -27,5 +27,6 @@ export default {
 <style scoped>
 .navbar nav {
   padding: 0 20px;
+  font-family: "Bowlby One SC", cursive;
 }
 </style>
